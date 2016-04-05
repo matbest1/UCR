@@ -3,7 +3,7 @@
 ##### Keep in mind that this is the version written by the official Developer Team containing.
 
 * Berkan
-* 
+* LaserTrap
 
 ##### UCR is NOT affiliated with Supercell, or any other company.
 ##### Help and Support: http://bit.ly/UltraPowa
