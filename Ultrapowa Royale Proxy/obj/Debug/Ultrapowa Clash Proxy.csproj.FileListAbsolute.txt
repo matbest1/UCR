@@ -1,0 +1,13 @@
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\Ultrapowa Clash Proxy.exe.config
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\Ultrapowa Clash Proxy.exe
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\Ultrapowa Clash Proxy.pdb
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\Sodium.dll
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\System.Data.HashFunction.Blake2.dll
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\System.Data.HashFunction.Core.dll
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\System.Data.HashFunction.Interfaces.dll
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\System.Data.HashFunction.Blake2.xml
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\System.Data.HashFunction.Core.xml
+E:\UCS\Ultrapowa Clash Proxy\bin\Debug\System.Data.HashFunction.Interfaces.xml
+E:\UCS\Ultrapowa Clash Proxy\obj\Debug\Ultrapowa Clash Proxy.csprojResolveAssemblyReference.cache
+E:\UCS\Ultrapowa Clash Proxy\obj\Debug\Ultrapowa Clash Proxy.exe
+E:\UCS\Ultrapowa Clash Proxy\obj\Debug\Ultrapowa Clash Proxy.pdb
