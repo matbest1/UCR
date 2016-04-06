@@ -22,7 +22,7 @@ namespace UCS.PacketProcessing
         public LoginFailedMessage(Client client) : base(client)
         {
             SetMessageType(20103);
-            //SetReason("UCS Developement Team");
+            SetReason("UCS Developement Team");
             // 8  : new game version available (removeupdateurl)
             // 10 : maintenance
             // 11 : banni temporairement
@@ -48,17 +48,12 @@ namespace UCS.PacketProcessing
             else
             {
                 pack.AddInt32(m_vErrorCode);
-                pack.AddString(m_vResourceFingerprintData);
+                //pack.AddString(m_vResourceFingerprintData);
                 pack.AddString(m_vRedirectDomain);
                 pack.AddString(m_vContentURL);
                 pack.AddString(m_vUpdateURL);
-                pack.AddString(m_vReason);
+                //pack.AddString(m_vReason);
                 pack.AddInt32(m_vRemainingTime);
-                pack.AddInt32(-1);
-                pack.Add(0);
-                pack.AddString("");
-                pack.AddInt32(-1);
-                pack.AddInt32(2);
                 Encrypt(pack.ToArray());
             }
         }

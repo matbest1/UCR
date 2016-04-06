@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ucsdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="clan">
+    <Key>
+      <PropertyRef Name="ClanId" />
+    </Key>
+    <Property Name="ClanId" Type="Int64" Nullable="false" />
+    <Property Name="LastUpdateTime" Type="DateTime" Nullable="false" />
+    <Property Name="Data" Type="String" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="PlayerId" />
+    </Key>
+    <Property Name="PlayerId" Type="Int64" Nullable="false" />
+    <Property Name="AccountStatus" Type="Byte" Nullable="false" />
+    <Property Name="AccountPrivileges" Type="Byte" Nullable="false" />
+    <Property Name="LastUpdateTime" Type="DateTime" Nullable="false" />
+    <Property Name="IPAddress" Type="String" Nullable="true" />
+    <Property Name="Avatar" Type="String" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="GameObjects" Type="String" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ucsdbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="clan" EntityType="Self.clan" />
+    <EntitySet Name="player" EntityType="Self.player" />
+  </EntityContainer>
+</Schema>

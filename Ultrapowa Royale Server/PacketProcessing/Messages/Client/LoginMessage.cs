@@ -45,28 +45,42 @@ namespace UCS.PacketProcessing
                 using (var reader = new CoCSharpPacketReader(new MemoryStream(GetData())))
                 {
                     UserID = reader.ReadInt64();
+                    Console.WriteLine("UserID -> " + UserID);
                     UserToken = reader.ReadString();
+
                     Unknown = reader.ReadInt32();
+                    Console.WriteLine("Unknown -> " + Unknown);
 
                     MasterHash = reader.ReadString();
+                    Console.WriteLine("MasterHash -> " + MasterHash);
                     Unknown1 = reader.ReadString();
+                    Console.WriteLine("Unknown1 -> " + Unknown1);
                     OpenUDID = reader.ReadString();
+                    Console.WriteLine("OpenUDID -> " + OpenUDID);
                     MacAddress = reader.ReadString();
+                    Console.WriteLine("MacAddress -> " + MacAddress);
                     DeviceModel = reader.ReadString();
+                    Console.WriteLine("DeviceModel -> " + DeviceModel);
 
                     AdvertisingGUID = reader.ReadString();
+                    Console.WriteLine("AdvertisingGUID -> " + AdvertisingGUID);
                     OSVersion = reader.ReadString();
+                    Console.WriteLine("OSVersion -> " + OSVersion);
                     Unknown2 = reader.ReadByte();
+                    Console.WriteLine("Unknown2 -> " + Unknown2);
                     Unknown3 = reader.ReadString();
+                    Console.WriteLine("Unknown3 -> " + Unknown3);
                     AndroidDeviceID = reader.ReadString();
+                    Console.WriteLine("AndroidDeviceID -> " + AndroidDeviceID);
                     Language = reader.ReadString();
+                    Console.WriteLine("Language -> " + Language);
                 }
             }
         }
 
         public override void Process(Level level)
         {
-            if (Convert.ToBoolean(ConfigurationManager.AppSettings["maintenanceMode"]) || Client.CState == 0)
+            if (!Convert.ToBoolean(ConfigurationManager.AppSettings["maintenanceMode"]) || Client.CState == 0)
             {
                 var p = new LoginFailedMessage(Client);
                 p.SetErrorCode(10);
@@ -111,13 +125,10 @@ namespace UCS.PacketProcessing
                 var tokenSeed = new byte[20];
                 new Random().NextBytes(tokenSeed);
                 using (SHA1 sha = new SHA1CryptoServiceProvider())
-                {
                     UserToken = BitConverter.ToString(sha.ComputeHash(tokenSeed)).Replace("-", string.Empty);
-                }
             }
 
             if (Convert.ToBoolean(ConfigurationManager.AppSettings["useCustomPatch"]))
-            {
                 if (MasterHash != ObjectManager.FingerPrint.sha)
                 {
                     var p = new LoginFailedMessage(Client);
@@ -128,20 +139,16 @@ namespace UCS.PacketProcessing
                     PacketManager.ProcessOutgoingPacket(p);
                     return;
                 }
-            }
 
             Client.ClientSeed = Unknown;
-
             ResourcesManager.LogPlayerIn(level, Client);
             level.Tick();
-            /*
+
+            
             var loginOk = new LoginOkMessage(Client);
             var avatar = level.GetPlayerAvatar();
             loginOk.SetAccountId(avatar.GetId());
             loginOk.SetPassToken(UserToken);
-            loginOk.SetServerMajorVersion(MajorVersion);
-            loginOk.SetServerBuild(MinorVersion);
-            loginOk.SetContentVersion(ContentVersion);
             loginOk.SetServerEnvironment("prod");
             loginOk.SetDaysSinceStartedPlaying(10);
             loginOk.SetServerTime(Math.Round(level.GetTime().Subtract(new DateTime(1970, 1, 1)).TotalSeconds * 1000).ToString());
@@ -149,7 +156,7 @@ namespace UCS.PacketProcessing
             loginOk.SetStartupCooldownSeconds(0);
             loginOk.SetCountryCode(Language);
             PacketManager.ProcessOutgoingPacket(loginOk);
-            */
+            
 
             /*
             var alliance = ObjectManager.GetAlliance(level.GetPlayerAvatar().GetAllianceId());
