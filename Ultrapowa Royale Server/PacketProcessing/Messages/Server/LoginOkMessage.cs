@@ -42,29 +42,14 @@ namespace UCS.PacketProcessing
         public override void Encode()
         {
             var pack = new List<byte>();
-
+            
             pack.AddInt64(m_vAccountId);
             pack.AddInt64(m_vAccountId);
+            pack.AddString(null);
             pack.AddString(m_vPassToken);
-            pack.AddString(m_vFacebookId);
-            pack.AddString(m_vGamecenterId);
-            pack.AddInt32(m_vServerMajorVersion);
-            pack.AddInt32(m_vServerBuild);
-            pack.AddInt32(m_vContentVersion);
-            pack.AddString(m_vServerEnvironment);
-            pack.AddInt32(m_vSessionCount);
-            pack.AddInt32(m_vPlayTimeSeconds);
             pack.AddInt32(0);
-            pack.AddString(m_vFacebookAppID);
-            pack.AddString((m_vStartupCooldownSeconds.ToString()));
-            pack.AddString(m_vAccountCreatedDate);
-            pack.AddInt32(0);
-            //pack.AddString(m_vGoogleID.ToString()); //Preventing Google login pop up in game
-            pack.AddString(null);                     //Preventing Google login pop up in game
-            pack.AddString(m_vCountryCode);
-            pack.AddString("someid2");
 
-            /* // DEBUG INFO
+            // DEBUG INFO
             Console.WriteLine("Account ID : " + m_vAccountId);
             Console.WriteLine("User Token : " + m_vPassToken);
             Console.WriteLine("FacebookID : " + m_vFacebookId);
@@ -80,7 +65,7 @@ namespace UCS.PacketProcessing
             Console.WriteLine("Google ID  : " + m_vGoogleID);
             Console.WriteLine("CountryCod : " + m_vCountryCode);
             Console.WriteLine("Environne  : " + m_vServerEnvironment);
-            // END DEBUG */
+            // END DEBUG 
 
             Encrypt(pack.ToArray());
         }
