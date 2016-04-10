@@ -1,0 +1,260 @@
+﻿<Window x:Class="UCS.UI.PopupConfiguration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UCS.UI"
+        mc:Ignorable="d"
+        Title="Configuration" Height="400" Width="600" Topmost="True" WindowStyle="None" Background="#171717" AllowsTransparency="True" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Border Name="windowBorder" BorderThickness="1" BorderBrush="#00779f">
+        <Grid>
+            <Rectangle x:Name="RBase" Fill="#ff0099cc" Height="30" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,0"/>
+            <Image x:Name="img_Utility" Source="../UI/Images/Utility.png" HorizontalAlignment="Left" Margin="0,0,0,0" Width="30" Height="30" VerticalAlignment="Top"/>
+            <Label x:Name="lbl_Title" Content="Server configuration" Margin="30,-1,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" Foreground="White" FontSize="16" FontFamily="Segoe UI Light"/>
+            <TextBox x:Name="TB_Gems" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,58,306,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_Gems_TextChanged">
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting gem value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 999999999</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Gems" Content="Starting gem:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_Gold" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,89,306,0" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" Height="22" VerticalAlignment="Top" TextChanged="TB_Gold_TextChanged">
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting gold value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 999999999</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Gold" Content="Starting gold:" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_Elixir" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,120,306,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_Elixir_TextChanged">
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting elixir value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 999999999</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Elixir" Content="Starting elixir:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_DarkElixir" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,151,306,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_DarkElixir_TextChanged">
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting dark elixir value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 999999999</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_DarkElixir" Content="Starting dark elixir:" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_Trophies" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,182,306,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_Trophies_TextChanged">
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting trophies value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 9999</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Trophies" Content="Starting trophies:" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_Shield" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,213,306,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_Shield_TextChanged" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting shield time value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 2147483647</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Shield" Content="Starting shield time:" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_StartingLevel" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,244,306,0" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" Height="22" VerticalAlignment="Top" TextChanged="TB_StartingLevel_TextChanged" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting level value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 9</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_StartingLevel" Content="Starting level:" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_Experience" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="140,275,306,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_Experience_TextChanged" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Starting level experience value</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Maximum value: 100</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Minum value: 0</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+
+            <Label x:Name="lbl_Experience" Content="Starting experience:" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+
+            <TextBox x:Name="TB_PatchServer" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" Text="" Margin="394,58,10,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Url of patching server</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Don't forget the trailing slash</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_PatchServer" Content="Patching server:" HorizontalAlignment="Left" Margin="296,58,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_Outdated" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" Text="" Margin="466,89,10,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextWrapping="NoWrap" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Redirect url for outdated client</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Don't forget the trailing slash</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Outdated" Content="Outdated client's redirect url:" HorizontalAlignment="Left" Margin="296,89,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <ComboBox x:Name="CB_ConnName" HorizontalAlignment="Left" Margin="466,120,0,0" VerticalAlignment="Top" Width="120" BorderBrush="Red" Foreground="White" Padding="5,5,5,5" Height="26" >
+                <ComboBox.Items>
+                    <ComboBoxItem x:Name="CN_T" IsSelected="True">
+                        sqliteEntities
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="CN_F">
+                        ucsdbEntities
+                    </ComboBoxItem>
+                </ComboBox.Items>
+                <ComboBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Select what database you want to use</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">sqliteEntities = SQLite</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">ucsdbEntities = MySQL</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </ComboBox.ToolTip>
+            </ComboBox>
+            <Label x:Name="lbl_ConnName" Content="Database connection name:" HorizontalAlignment="Left" Margin="296,120,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_ClientVer" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="466,151,10,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6">
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Client version</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Major version dot client build</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_ClientVer" Content="Client Version:" HorizontalAlignment="Left" Margin="296,151,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox x:Name="TB_Maintenance" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="466,182,10,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Maintenance time in seconds</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Set the maintenance time in seconds</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Maintenance" Content="Maintenance time:" HorizontalAlignment="Left" Margin="296,182,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+            <TextBox IsReadOnly="True" x:Name="TB_Port" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="386,213,160,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_Port_TextChanged" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Port for client connection</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Default value is 9339</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_Port" Content="Server port:" HorizontalAlignment="Left" Margin="296,213,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+
+            <TextBox x:Name="TB_DebugPort" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="536,213,10,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" TextChanged="TB_DebugPort_TextChanged" >
+                <TextBox.ToolTip>
+                    <ToolTip Background="#FF262626" Foreground="White" BorderBrush="#08D9FF">
+                        <StackPanel>
+                            <TextBlock FontFamily="Segoe UI Semibold" Foreground="#FF1FBAEE" FontSize="14.667">> Port for API manager</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Default value is 4434</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Max value: 65535</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Light" FontSize="13.333">Min value: 0</TextBlock>
+                            <TextBlock FontFamily="Segoe UI Semibold" FontSize="13.333" Foreground="Red" >THE VALUE SHOULD NOT BE THE SAME OF SERVER PORT</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <Label x:Name="lbl_DebugPort" Content="Debug port:" HorizontalAlignment="Left" Margin="458,213,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+
+            <TextBox x:Name="TB_LogLevel" Template="{StaticResource FlatTextBoxStyle}" CaretBrush="#39c8e2" Padding="4" TextWrapping="Wrap" Text="" Margin="536,244,10,0" Height="22" VerticalAlignment="Top" Background="#FF00697C" Foreground="White" BorderBrush="#39c8e2" SelectionBrush="#FF1B60A6" />
+            <Label x:Name="lbl_LogLevel" Content="Log level:" HorizontalAlignment="Left" Margin="457,244,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+
+            <ComboBox x:Name="CB_CustomPatch" HorizontalAlignment="Left" Margin="386,275,0,0" VerticalAlignment="Top" Width="52" BorderBrush="Red" Foreground="White" Padding="5,5,5,5" Height="26" FontFamily="Segoe UI Light" >
+                <ComboBox.Items>
+                    <ComboBoxItem x:Name="CP_T" IsSelected="True">
+                        True
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="CP_F">
+                        False
+                    </ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+
+            <Label x:Name="lbl_CustomPatch" Content="Custom patch:" HorizontalAlignment="Left" Margin="296,275,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+
+            <ComboBox x:Name="CB_APIManager" HorizontalAlignment="Left" Margin="536,275,0,0" VerticalAlignment="Top" Width="52" BorderBrush="Red" Foreground="White" Padding="5,5,5,5" Height="26" FontFamily="Segoe UI Light" >
+                <ComboBox.Items>
+                    <ComboBoxItem x:Name="AM_T" IsSelected="True">
+                        True
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="AM_F">
+                        False
+                    </ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <Label x:Name="lbl_APIManager" Content="Enable API:" HorizontalAlignment="Left" Margin="457,275,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe UI Light" FontSize="13.333"/>
+
+            <ComboBox x:Name="CB_EnableDebug" HorizontalAlignment="Left" Margin="386,244,0,0" VerticalAlignment="Top" Width="52" BorderBrush="Red" Foreground="White" Padding="5,5,5,5" Height="26" FontFamily="Segoe UI Light">
+                <ComboBox.Items>
+                    <ComboBoxItem x:Name="ED_T" IsSelected="True">
+                        True
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="ED_F">
+                        False
+                    </ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <Label x:Name="lbl_EnableDebug" Content="Debug Mode:" HorizontalAlignment="Left" Margin="297,245,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+            <ComboBox x:Name="CB_EnableMaintenance" HorizontalAlignment="Left" Margin="343,308,0,0" VerticalAlignment="Top" Width="52" BorderBrush="Red" Foreground="White" Padding="5,5,5,5" Height="26" FontFamily="Segoe UI Light" >
+                <ComboBox.Items>
+                    <ComboBoxItem x:Name="EM_T" IsSelected="True">
+                        True
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="EM_F">
+                        False
+                    </ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <Label x:Name="lbl_EnableMaintenance" Content="Enable Maintenance Mode:" HorizontalAlignment="Left" Margin="182,308,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+            <Button x:Name="BTN_Save" Style="{StaticResource RoundedButton}" Content="Save changes" Margin="306,0,140,10" Height="28" VerticalAlignment="Bottom" Click="BTN_SaveChanges_Click" Foreground="White" FontSize="13.333" Background="#FF262626" FontFamily="Segoe UI Light"/>
+            <Button x:Name="BTN_Load" Style="{StaticResource RoundedButton}" Content="Reload configuration" Margin="140,0,306,10" Height="28" VerticalAlignment="Bottom" Click="BTN_ReloadConfig_Click" Foreground="White" FontSize="13.333" Background="#FF262626" FontFamily="Segoe UI Light"/>
+            <Button x:Name="BTN_Discard" Style="{StaticResource RoundedButton}" Content="Discard" Margin="521,0,12,10" Height="28" VerticalAlignment="Bottom" Click="BTN_DiscardChanges_Click" Foreground="White" FontSize="13.333" Background="#FF262626" FontFamily="Segoe UI Light"/>
+        </Grid>
+    </Border>
+</Window>

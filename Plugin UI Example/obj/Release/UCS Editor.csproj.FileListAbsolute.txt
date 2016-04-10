@@ -1,0 +1,24 @@
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\ucsconf.config
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\UCS Editor.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\UCS Editor.pdb
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\UCS.exe
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\Ultrapowa Clash Key.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\Sodium.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\Newtonsoft.Json.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\EntityFramework.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\Ionic.Zlib.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\UCS.pdb
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\Ultrapowa Clash Key.pdb
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\Newtonsoft.Json.xml
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\EntityFramework.xml
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\bin\Release\it-IT\UCS.resources.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS Editor.csprojResolveAssemblyReference.cache
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\MainWindow.g.cs
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS Editor_MarkupCompile.cache
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS Editor_MarkupCompile.lref
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\MainWindow.baml
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS Editor.g.resources
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS_Editor.Properties.Resources.resources
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS Editor.csproj.GenerateResource.Cache
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS Editor.dll
+C:\Users\ADeltaX\Documents\GitHub\UCS-GUI - Copia\UCS Editor\obj\Release\UCS Editor.pdb

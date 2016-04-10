@@ -1,0 +1,7 @@
+E:\UCS\Ultrapowa Clash Compressor\bin\Debug\Ultrapowa Clash Compressor.exe
+E:\UCS\Ultrapowa Clash Compressor\bin\Debug\Ultrapowa Clash Compressor.pdb
+E:\UCS\Ultrapowa Clash Compressor\bin\Debug\SevenZip.SDK.dll
+E:\UCS\Ultrapowa Clash Compressor\bin\Debug\SevenZip.SDK.xml
+E:\UCS\Ultrapowa Clash Compressor\obj\Debug\Ultrapowa Clash Compressor.csprojResolveAssemblyReference.cache
+E:\UCS\Ultrapowa Clash Compressor\obj\Debug\Ultrapowa Clash Compressor.exe
+E:\UCS\Ultrapowa Clash Compressor\obj\Debug\Ultrapowa Clash Compressor.pdb

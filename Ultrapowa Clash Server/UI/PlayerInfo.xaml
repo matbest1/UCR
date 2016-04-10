@@ -1,0 +1,30 @@
+﻿<Window x:Class="UCS.UI.PlayerInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UCS.UI"
+        xmlns:p="clr-namespace:UCS.Properties"
+        mc:Ignorable="d"
+        Title="Popup" Height="299" Width="394" Topmost="True" WindowStyle="None" Background="#171717" AllowsTransparency="True" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Border Name="windowBorder" BorderThickness="1" BorderBrush="#00779f">
+        <Grid>
+            <Rectangle x:Name="RBase" Fill="#ff0099cc" Height="30" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,0"/>
+            <Image x:Name="img_Commands" Source="../UI/Images/Player Info.png" HorizontalAlignment="Left" Margin="5,0,0,0" Width="30" Height="30" VerticalAlignment="Top"/>
+            <Button Style="{StaticResource RoundedButton}" x:Name="btn_ok" Content="{x:Static p:Resources.OK}" Margin="0,0,10,10" Click="btn_ok_Click" Background="#FF262626" Height="24" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+
+            <Label x:Name="LB_Main" Content="Select a player to get info. | Almost finished" VerticalAlignment="Top" Foreground="White" Margin="38,-2,-8,0" FontFamily="Segoe UI Light" FontSize="16"/>
+            <Label x:Name="lbl_ID" Content="Player ID:" VerticalAlignment="Top" Foreground="White" Margin="10,39,317,0" FontFamily="Segoe UI Light" FontSize="13.333" />
+            <Label x:Name="lbl_Name" Content="Name:" VerticalAlignment="Top" Foreground="White" Margin="10,72,10,0" FontFamily="Segoe UI Light" FontSize="13.333" />
+
+            <ComboBox x:Name="CB_Player" Margin="75,41,10,0" BorderBrush="Red" Foreground="White" Padding="5,5,5,5" Height="25" VerticalAlignment="Top"/>
+            <Label x:Name="lbl_Score" Content="Score:" VerticalAlignment="Top" Foreground="White" Margin="10,100,10,0" FontFamily="Segoe UI Light" FontSize="13.333" />
+            <Label x:Name="lbl_Townhall" Content="Townhall level:" VerticalAlignment="Top" Foreground="White" Margin="10,128,10,0" FontFamily="Segoe UI Light" FontSize="13.333" />
+            <Label x:Name="lbl_Gems" Content="Gems:" VerticalAlignment="Top" Foreground="White" Margin="10,156,10,0" FontFamily="Segoe UI Light" FontSize="13.333" />
+            <Label x:Name="lbl_Experience" Content="Experience:" VerticalAlignment="Top" Foreground="White" Margin="10,184,10,0" FontFamily="Segoe UI Light" FontSize="13.333" />
+            <Label x:Name="lbl_Level" Content="Level:" VerticalAlignment="Top" Foreground="White" Margin="10,212,10,0" FontFamily="Segoe UI Light" FontSize="13.333" />
+            <ProgressBar x:Name="PB_Loader" Visibility="Visible" Height="4" Margin="0,293,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Background="{x:Null}" BorderBrush="#00779f" Value="0" RenderTransformOrigin="0.5,0.5" />
+            <Label x:Name="lbl_Loading" Visibility="Visible" Content="Loading..." VerticalAlignment="Top" Foreground="White" Margin="-2,270,92,0" FontFamily="Segoe UI Light" FontSize="12" Height="27" />
+        </Grid>
+    </Border>
+</Window>

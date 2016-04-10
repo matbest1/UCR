@@ -1,0 +1,6 @@
+C:\Users\Administrateur\Documents\GitHub\UCS\UCS Crypto Key\bin\Debug\UCS Crypto Key.dll
+C:\Users\Administrateur\Documents\GitHub\UCS\UCS Crypto Key\bin\Debug\UCS Crypto Key.pdb
+C:\Users\Administrateur\Documents\GitHub\UCS\UCS Crypto Key\bin\Debug\Sodium.dll
+C:\Users\Administrateur\Documents\GitHub\UCS\UCS Crypto Key\obj\Debug\UCS Crypto Key.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Documents\GitHub\UCS\UCS Crypto Key\obj\Debug\UCS Crypto Key.dll
+C:\Users\Administrateur\Documents\GitHub\UCS\UCS Crypto Key\obj\Debug\UCS Crypto Key.pdb
