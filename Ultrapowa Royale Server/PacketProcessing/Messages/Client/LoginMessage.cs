@@ -80,7 +80,7 @@ namespace UCS.PacketProcessing
 
         public override void Process(Level level)
         {
-            if (Convert.ToBoolean(ConfigurationManager.AppSettings["maintenanceMode"]) || Client.CState == 0)
+            if (!Convert.ToBoolean(ConfigurationManager.AppSettings["maintenanceMode"]) || Client.CState == 0)
             {
                 var p = new LoginFailedMessage(Client);
                 p.SetErrorCode(10);

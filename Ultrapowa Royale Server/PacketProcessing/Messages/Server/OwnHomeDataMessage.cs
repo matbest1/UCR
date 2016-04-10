@@ -16,6 +16,7 @@ namespace UCS.PacketProcessing
         public override void Encode()
         {
             var data = new List<byte>();
+
             Encrypt(data.ToArray());
         }
     }

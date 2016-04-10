@@ -16,7 +16,7 @@ namespace UCS.PacketProcessing
         private string m_vReason;
         private string m_vRedirectDomain;
         private int m_vRemainingTime;
-        private string m_vResourceFingerprintData;
+        private string m_vResourceFingerprintData = "9bb57e3688e6df1e1e70ba4f927163bb8cbf7cef";
         private string m_vUpdateURL;
 
         public LoginFailedMessage(Client client) : base(client)
@@ -48,12 +48,17 @@ namespace UCS.PacketProcessing
             else
             {
                 pack.AddInt32(m_vErrorCode);
-                //pack.AddString(m_vResourceFingerprintData);
+                pack.AddString(m_vResourceFingerprintData);
                 pack.AddString(m_vRedirectDomain);
                 pack.AddString(m_vContentURL);
                 pack.AddString(m_vUpdateURL);
-                //pack.AddString(m_vReason);
+                pack.AddString(m_vReason);
                 pack.AddInt32(m_vRemainingTime);
+                pack.AddInt32(-1);
+                pack.Add(0);
+                pack.AddString("");
+                pack.AddInt32(-1);
+                pack.AddInt32(2);
                 Encrypt(pack.ToArray());
             }
         }

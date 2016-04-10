@@ -41,32 +41,27 @@ namespace UCS.PacketProcessing
 
         public override void Encode()
         {
-            var pack = new List<byte>();
-            
+            List<byte> pack = new List<byte>();
             pack.AddInt64(m_vAccountId);
             pack.AddInt64(m_vAccountId);
-            pack.AddString(null);
             pack.AddString(m_vPassToken);
+            pack.AddString(m_vFacebookId);
+            pack.AddString(m_vGamecenterId);
+            pack.AddInt32(m_vServerMajorVersion);
+            pack.AddInt32(m_vServerBuild);
+            pack.AddInt32(m_vContentVersion);
+            pack.AddString(m_vServerEnvironment);
+            pack.AddInt32(m_vSessionCount);
+            pack.AddInt32(m_vPlayTimeSeconds);
             pack.AddInt32(0);
-
-            // DEBUG INFO
-            Console.WriteLine("Account ID : " + m_vAccountId);
-            Console.WriteLine("User Token : " + m_vPassToken);
-            Console.WriteLine("FacebookID : " + m_vFacebookId);
-            Console.WriteLine("GameCenter : " + m_vGamecenterId);
-            Console.WriteLine("MajorVers  : " + m_vServerMajorVersion);
-            Console.WriteLine("MinorVers  : " + m_vServerBuild);
-            Console.WriteLine("RevisionV  : " + m_vContentVersion);
-            Console.WriteLine("LoginCount : " + m_vSessionCount);
-            Console.WriteLine("PlayTime S : " + m_vPlayTimeSeconds);
-            Console.WriteLine("FB APP ID  : " + m_vFacebookAppID.ToString());
-            Console.WriteLine("Cooldown S : " + m_vStartupCooldownSeconds.ToString());
-            Console.WriteLine("CreateDate : " + m_vAccountCreatedDate);
-            Console.WriteLine("Google ID  : " + m_vGoogleID);
-            Console.WriteLine("CountryCod : " + m_vCountryCode);
-            Console.WriteLine("Environne  : " + m_vServerEnvironment);
-            // END DEBUG 
-
+            pack.AddString(m_vFacebookAppID);
+            pack.AddString((m_vStartupCooldownSeconds.ToString()));
+            pack.AddString(m_vAccountCreatedDate);
+            pack.AddInt32(0);
+            pack.AddString(m_vGoogleID.ToString());
+            pack.AddString(null);
+            pack.AddString(m_vCountryCode);
+            pack.AddString("someid2");
             Encrypt(pack.ToArray());
         }
 
@@ -144,5 +139,83 @@ namespace UCS.PacketProcessing
         {
             m_vStartupCooldownSeconds = seconds;
         }
+
+        /*
+        int LoginOk()
+        {
+            sub_103594(&unk_3C8E88, "googleId");
+            sub_103594(&unk_3C8E48, "facebookId");
+            sub_103594(&unk_3C8F90, "gamecenterId");
+            sub_103594(&unk_3C90BC, "accountId");
+            sub_103594(&unk_3C8EB0, "expLevel");
+            sub_103594(&unk_3C8CCC, "gold");
+            sub_103594(&unk_3C9080, "PCBalance");
+            sub_103594(&unk_3C8ED8, "FreePCBalance");
+            sub_103594(&unk_3C91C0, "allianceId");
+            sub_103594(&unk_3C8DD0, "score");
+            sub_103594(&unk_3C9044, "Session Count");
+            sub_103594(&unk_3C91EC, "days_since_start");
+            sub_103594(&unk_3C901C, "Total Minutes Played");
+            sub_103594(&unk_3C8E34, "accountCreatedDate");
+            sub_103594(&unk_3C90F8, "serverTime");
+            sub_103594(&unk_3C8E0C, "device");
+            sub_103594(&unk_3C8D08, "gamelang");
+            sub_103594(&unk_3C8D30, "Level");
+            sub_103594(&unk_3C8F54, "Tutorial");
+            sub_103594(&unk_3C8FA4, "Game");
+            sub_103594(&unk_3C9134, "Economy");
+            sub_103594(&unk_3C8CE0, "Social");
+            sub_103594(&unk_3C906C, "started");
+            sub_103594(&unk_3C91AC, "cancelled");
+            sub_103594(&unk_3C8C7C, "finished");
+            sub_103594(&unk_3C8F40, "chat");
+            sub_103594(&unk_3C9058, "membership");
+            sub_103594(&unk_3C910C, "mail");
+            sub_103594(&unk_3C8F7C, "UI");
+            sub_103594(&unk_3C90A8, "SpendPC");
+            sub_103594(&unk_3C8E5C, "GainFreePC");
+            sub_103594(&unk_3C8F2C, "SpendGold");
+            sub_103594(&unk_3C8D80, "Quest");
+            sub_103594(&unk_3C9008, "SwitchAccount");
+            sub_103594(&unk_3C8EC4, "FB connect");
+            sub_103594(&unk_3C8DF8, "GameCenter connect");
+            sub_103594(&unk_3C8F18, "InAppPurchase");
+            sub_103594(&unk_3C8F68, "Alliance");
+            sub_103594(&unk_3C8CA4, "World Chat");
+            sub_103594(&unk_3C8D6C, "nature");
+            sub_103594(&unk_3C8E70, "Achievement");
+            sub_103594(&unk_3C8C54, "Sell Deco");
+            sub_103594(&unk_3C8C68, "Spend PC");
+            sub_103594(&unk_3C8CB8, "Gain Free PC");
+            sub_103594(&unk_3C8FCC, "Battle");
+            sub_103594(&unk_3C90E4, "Visiting players");
+            sub_103594(&unk_3C915C, "FB connect");
+            sub_103594(&unk_3C8FE0, "GameCenter connect");
+            sub_103594(&unk_3C9030, "Building");
+            sub_103594(&unk_3C8CF4, "Upgrade");
+            sub_103594(&unk_3C8DBC, "Level reached");
+            sub_103594(&unk_3C8DA8, "attackEnd");
+            sub_103594(&unk_3C8E20, "npcAttackEnd");
+            sub_103594(&unk_3C8D44, "Switch Account");
+            sub_103594(&unk_3C9094, "Economy");
+            sub_103594(&unk_3C8D58, "DeviceLink");
+            sub_103594(&unk_3C9148, "ConnectionInterface");
+            sub_103594(&unk_3C8D94, "globalId");
+            sub_103594(&unk_3C9120, "upgradeLvl");
+            sub_103594(&unk_3C8E9C, "enemyThLvl");
+            sub_103594(&unk_3C90D0, "elixirLoot");
+            sub_103594(&unk_3C8D1C, "goldLoot");
+            sub_103594(&unk_3C9184, "darkElixirLoot");
+            sub_103594(&unk_3C8F04, "scoreChange");
+            sub_103594(&unk_3C8C90, "enemyScore");
+            sub_103594(&unk_3C8DE4, "availableScore");
+            sub_103594(&unk_3C9170, "stars");
+            sub_103594(&unk_3C9198, "favoriteTroop");
+            sub_103594(&unk_3C8FB8, "favoriteSpell");
+            sub_103594(&unk_3C91D4, "npcId");
+            sub_103594(&unk_3C8EEC, "PCChange");
+            sub_103594(&unk_3C8FF4, "FreePCChange");
+        }
+        */
     }
 }
