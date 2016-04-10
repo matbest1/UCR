@@ -12,7 +12,7 @@ namespace UCS.PacketProcessing
     internal class LoginFailedMessage : Message
     {
         private string m_vContentURL;
-        private int m_vErrorCode;
+        private byte m_vErrorCode;
         private string m_vReason;
         private string m_vRedirectDomain;
         private int m_vRemainingTime;
@@ -35,19 +35,23 @@ namespace UCS.PacketProcessing
             var pack = new List<byte>();
             if (Client.CState == 0)
             {
-                pack.AddInt32(m_vErrorCode);
+                pack.Add(m_vErrorCode);
                 pack.AddString(m_vResourceFingerprintData);
                 pack.AddString(m_vRedirectDomain);
                 pack.AddString(m_vContentURL);
                 pack.AddString(m_vUpdateURL);
                 pack.AddString(m_vReason);
+                pack.AddInt32(m_vRemainingTime);
                 pack.AddInt32(-1);
                 pack.Add(0);
+                pack.AddString("");
+                pack.AddInt32(-1);
+                pack.AddInt32(2);
                 SetData(pack.ToArray());
             }
             else
             {
-                pack.AddInt32(m_vErrorCode);
+                pack.Add(m_vErrorCode);
                 pack.AddString(m_vResourceFingerprintData);
                 pack.AddString(m_vRedirectDomain);
                 pack.AddString(m_vContentURL);
@@ -73,7 +77,7 @@ namespace UCS.PacketProcessing
             m_vContentURL = url;
         }
 
-        public void SetErrorCode(int code)
+        public void SetErrorCode(byte code)
         {
             m_vErrorCode = code;
         }

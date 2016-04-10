@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ucsdbModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="ISO8601" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="clan">
+    <Key>
+      <PropertyRef Name="ClanId" />
+    </Key>
+    <Property Name="ClanId" Type="integer" Nullable="false" />
+    <Property Name="LastUpdateTime" Type="datetime" Nullable="false" />
+    <Property Name="Data" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+  </EntityType>
+  <EntityType Name="player">
+    <Key>
+      <PropertyRef Name="PlayerId" />
+    </Key>
+    <Property Name="PlayerId" Type="integer" Nullable="false" />
+    <Property Name="AccountStatus" Type="tinyint" Nullable="false" />
+    <Property Name="AccountPrivileges" Type="tinyint" Nullable="false" />
+    <Property Name="LastUpdateTime" Type="datetime" Nullable="false" />
+    <Property Name="IPAddress" Type="varchar" Nullable="true" />
+    <Property Name="Avatar" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="GameObjects" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ucsdbModelStoreContainer">
+    <EntitySet Name="clan" EntityType="Self.clan" store:Type="Tables" />
+    <EntitySet Name="player" EntityType="Self.player" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,39 @@
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ultrapowa Royale Server.exe.config
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\App.config
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\config.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\banned-ip.txt
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\libsodium-64.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\libsodium.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ultrapowa Royale Server.exe.manifest
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ultrapowa Royale Server.application
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ultrapowa Royale Server.exe
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ultrapowa Royale Server.pdb
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\EntityFramework.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ionic.ZLib.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\MySql.Data.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Sodium.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.HashFunction.Blake2.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.HashFunction.Core.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.HashFunction.Interfaces.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.SQLite.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ultrapowa Clash Key.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\zlib.net.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Ultrapowa Clash Key.pdb
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\EntityFramework.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.HashFunction.Blake2.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.HashFunction.Core.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.HashFunction.Interfaces.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\bin\Debug\System.Data.SQLite.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\obj\Debug\Ultrapowa Royale Server.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\obj\Debug\Ultrapowa Royale Server.TrustInfo.xml
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\obj\Debug\Ultrapowa Royale Server.exe.manifest
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\obj\Debug\Ultrapowa Royale Server.application
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\obj\Debug\Ultrapowa Royale Server.exe
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Server\obj\Debug\Ultrapowa Royale Server.pdb

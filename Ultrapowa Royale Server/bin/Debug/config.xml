@@ -1,0 +1,13 @@
+﻿<appSettings>
+  <add key="startingGems" value="777500" />
+  <add key="startingGold" value="100000000" />
+  <add key="startingTrophies" value="4000" />
+  <add key="clientVersion" value="1.2.3" />
+  <add key="useCustomPatch" value="false" />
+  <add key="UpdateUrl" value="http://www.ultrapowa.com/" />
+  <add key="patchingServer" value="http://178.32.9.216/" />
+  <add key="maintenanceMode" value="false" />
+  <add key="databaseConnectionName" value="ucsdbEntities" />
+  <add key="loggingLevel" value="4" />
+  <add key="proDebugPort" value ="8888" />
+</appSettings>
