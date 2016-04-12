@@ -1,0 +1,6 @@
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Key\bin\Debug\Ultrapowa Clash Key.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Key\bin\Debug\Ultrapowa Clash Key.pdb
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Key\bin\Debug\Sodium.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Key\obj\Debug\Ultrapowa Royale Key.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Key\obj\Debug\Ultrapowa Clash Key.dll
+C:\Users\Administrateur\Documents\GitHub\UCR\Ultrapowa Royale Key\obj\Debug\Ultrapowa Clash Key.pdb

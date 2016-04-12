@@ -1,6 +1,0 @@
-E:\UCS\Ultrapowa Clash KeyGen\bin\Debug\Ultrapowa Clash KeyGen.exe
-E:\UCS\Ultrapowa Clash KeyGen\bin\Debug\Ultrapowa Clash KeyGen.pdb
-E:\UCS\Ultrapowa Clash KeyGen\bin\Debug\Sodium.dll
-E:\UCS\Ultrapowa Clash KeyGen\obj\Debug\Ultrapowa Clash KeyGen.csprojResolveAssemblyReference.cache
-E:\UCS\Ultrapowa Clash KeyGen\obj\Debug\Ultrapowa Clash KeyGen.exe
-E:\UCS\Ultrapowa Clash KeyGen\obj\Debug\Ultrapowa Clash KeyGen.pdb

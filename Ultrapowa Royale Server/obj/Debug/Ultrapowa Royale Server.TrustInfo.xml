@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><trustInfo xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"><security><applicationRequestMinimum><PermissionSet Unrestricted="false" ID="Custom" SameSite="site" /><defaultAssemblyRequest permissionSetReference="Custom" /></applicationRequestMinimum><requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3"><!--
+          Options du manifeste de contrôle de compte d'utilisateur
+          Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+          nœud requestedExecutionLevel par l'une des propositions suivantes :
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la 
+         compatibilité descendante, supprimez le nœud requestedExecutionLevel.
+    --><requestedExecutionLevel level="asInvoker" uiAccess="false" /></requestedPrivileges></security></trustInfo>
