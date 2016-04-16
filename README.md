@@ -9,7 +9,7 @@
 ##### Help and Support: http://bit.ly/UltraPowa
 ##### Libsodium  requires the Visual C++ Redistributable for Visual Studio 2015.. If its not installed Sodium.SodiumCore will throw a DllNotFoundException.
 # Download
-* PreBuilt UCR -> 
+* PreBuilt UCR -> https://github.com/MrARM/UCR/releases/download/1.0/UCR.zip
 * APK -> 
 
 # License
